@@ -36,5 +36,12 @@
       <li><a href="./gallery">Explore the image gallery</a></li>
       <li><a href="https://www.elobservador.com.uy">External link</a></li>
     </ul>
+    <button onclick="triggerCustomEvent()" value="Trigger custom event">
   </body>
 </html>
+<script>
+  function triggerCustomEvent()
+  {
+    dataLayer.push({'event': 'button1-click'});
+  }
+</script>
